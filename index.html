@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Password Generator</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js" defer="true"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  
+
+  <div class="container">
+
+    <div class="notif">
+      Parolunuz Kopyalandı!
+    </div>
+
+    <h1>Parol Generatoru</h1>
+
+    <div class="parolxana"> <!--parol ve duymeler bu divde yerlesir-->
+      <div>
+        <input type="text" id="parol" readonly>
+        <div>
+          <button id="copyBtn"><i class="fa-solid fa-copy"></i></button>
+          <button id="generateBtn"><i class="fa-solid fa-arrows-rotate"></i></button>
+        </div>
+      </div>
+    </div>
+
+    <div class="parolsecimler"> <!--Parol secimleri-->
+      <div>
+        <h2>Seçimlər</h2>
+      </div>
+      <div>
+
+        <div>
+          <label for="uzunluq">Uzunluğu</label>
+          <span id="uzunluqspan">12</span>
+          <input type="range" min="1" max="50" value="12" id="uzunluq">
+        </div>
+
+        
+        <div class="checkboxcont">
+          <input type="checkbox" checked id="check1">
+          <label for="check1">Böyük hərflər</label>
+          <input type="checkbox" checked id="check2">
+          <label for="check2">Balaca hərflər</label>
+          <input type="checkbox" checked id="check3">
+          <label for="check3">Rəqəmlər</label>
+          <input type="checkbox" id="check4">
+          <label for="check4">Simvollar</label>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+</body>
+</html>

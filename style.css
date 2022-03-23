@@ -1,0 +1,59 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  padding-top: 100px;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.notif {
+  display: none;
+  pointer-events: none;
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  text-align: center;
+  background-color: white;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  border-radius: 8px 0 0 8px;
+  -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+          box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-left: 7px solid green;
+}
+
+label {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.parolxana input {
+  padding: 8px 15px;
+  width: 400px;
+  border: 2px solid green;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  color: green;
+}
+
+input:focus {
+  outline: none;
+}
+
+.parolxana > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+/*# sourceMappingURL=style.css.map */
