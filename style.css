@@ -13,6 +13,112 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   font-family: Arial, Helvetica, sans-serif;
+  -webkit-transition: background-color 0.5s linear;
+  transition: background-color 0.5s linear;
+}
+
+button#darkmode {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 1.3rem;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: black;
+  border: none;
+  color: white;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.darkmode {
+  background-color: black;
+  color: white;
+}
+
+.container {
+  min-width: 567px;
+  width: 567px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2rem 2rem 4rem;
+  -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+          box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.container .parolxana {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.container .parolxana input {
+  padding: 8px 15px;
+  width: 400px;
+  border: 3px solid green;
+  border-radius: 3px;
+  font-size: 1.2rem;
+  color: green;
+}
+
+.container .parolxana div button {
+  width: 45px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  margin: 5px;
+  color: #180A0A;
+  font-size: 1.3rem;
+}
+
+.container .parolsecimler {
+  width: 100%;
+}
+
+.container .parolsecimler .uzunluqdiv {
+  margin-bottom: 25px;
+}
+
+.container .parolsecimler .uzunluqdiv label {
+  width: 10%;
+}
+
+.container .parolsecimler .uzunluqdiv span {
+  width: 5%;
+}
+
+.container .parolsecimler .uzunluqdiv input {
+  width: 80%;
+  cursor: ew-resize;
+  float: right;
+}
+
+.container .parolsecimler .checkboxcont {
+  width: 100%;
+}
+
+.container .parolsecimler .checkboxcont label {
+  font-size: 0.9rem;
+  margin-right: 10px;
 }
 
 .notif {
@@ -23,6 +129,7 @@ body {
   right: 15px;
   text-align: center;
   background-color: white;
+  color: black;
   padding: 10px 20px;
   font-size: 1.2rem;
   border-radius: 8px 0 0 8px;
@@ -38,15 +145,6 @@ label {
           user-select: none;
 }
 
-.parolxana input {
-  padding: 8px 15px;
-  width: 400px;
-  border: 2px solid green;
-  border-radius: 5px;
-  font-size: 1.2rem;
-  color: green;
-}
-
 input:focus {
   outline: none;
 }
@@ -56,4 +154,3 @@ input:focus {
   display: -ms-flexbox;
   display: flex;
 }
-/*# sourceMappingURL=style.css.map */
