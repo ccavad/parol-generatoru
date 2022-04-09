@@ -4,6 +4,8 @@
 }
 
 body {
+  height: 100vh;
+  overflow: hidden;
   padding-top: 100px;
   margin: 0;
   display: -webkit-box;
@@ -46,6 +48,7 @@ button#darkmode {
 }
 
 .container {
+  height: 400px;
   min-width: 567px;
   width: 567px;
   display: -webkit-box;
