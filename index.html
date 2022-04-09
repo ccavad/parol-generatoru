@@ -13,21 +13,24 @@
 <body>
   
 
+  <button id="darkmode"><i class="fa-solid fa-moon"></i></button> <!--dark mode duymesi fa-sun-->
+
+  <div class="notif">
+    Parolunuz Kopyalandı!
+  </div>
+
+
   <div class="container">
 
-    <div class="notif">
-      Parolunuz Kopyalandı!
-    </div>
 
-    <h1>Parol Generatoru</h1>
+
+    <h1>Parol \ Şifrə Generatoru</h1>
 
     <div class="parolxana"> <!--parol ve duymeler bu divde yerlesir-->
+      <input type="text" id="parol" readonly>
       <div>
-        <input type="text" id="parol" readonly>
-        <div>
-          <button id="copyBtn"><i class="fa-solid fa-copy"></i></button>
-          <button id="generateBtn"><i class="fa-solid fa-arrows-rotate"></i></button>
-        </div>
+        <button id="copyBtn"><i class="fa-solid fa-copy"></i></button>
+        <button id="generateBtn"><i class="fa-solid fa-arrows-rotate"></i></button>
       </div>
     </div>
 
@@ -37,7 +40,7 @@
       </div>
       <div>
 
-        <div>
+        <div class="uzunluqdiv">
           <label for="uzunluq">Uzunluğu</label>
           <span id="uzunluqspan">12</span>
           <input type="range" min="1" max="50" value="12" id="uzunluq">
@@ -57,7 +60,6 @@
       </div>
     </div>
   </div>
-
 
 
 </body>
