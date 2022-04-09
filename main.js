@@ -20,11 +20,11 @@ $(document).ready(function(){
     uzunluqspan.html(uzunluq.val());
     parolYarat()
     if(uzunluq.val() < 7){
-      parol.css({"border": "2px solid red", "color": "red"})
+      parol.css({"border-color": "red", "color": "red"})
     } else if (uzunluq.val() >8) {
-      parol.css({"border": "2px solid green", "color": "green"})
+      parol.css({"border-color": "green", "color": "green"})
     } else {
-      parol.css({"border": "2px solid yellow", "color": "yellow"})
+      parol.css({"border-color": "orange", "color": "orange"})
     }
   })
 
@@ -70,28 +70,23 @@ $(document).ready(function(){
       }
       return generatedParol;
     }
+  }
 
+  const darkmode = $("button#darkmode");
+  const duymeler = $(".parolxana button")
 
-}
+  darkmode.click(() => {
+    $("body").toggleClass("darkmode");
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    if ($("body").hasClass("darkmode")) {
+      darkmode.html("<i class='fa-solid fa-sun'></i>");
+      darkmode.css({"background" : "orange", "color" : "white"});
+      duymeler.css({"color" : "white"});
+    } else {
+      darkmode.html("<i class='fa-solid fa-moon'></i>");
+      duymeler.css({"color" : "#180A0A"});
+      darkmode.css({"background" : "black", "color" : "white"})
+    }
+  })
 
 });
